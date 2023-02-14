@@ -61,7 +61,7 @@ class MyHomePage extends StatefulWidget {
     String message = "";
 
     uploadImage() async{
-      final request = http.MultipartRequest("POST", Uri.parse("http://34.124.170.58:5000/upload")); //url is gcp's server url
+      final request = http.MultipartRequest("POST", Uri.parse("http://127.0.0.0:1000/upload")); //url is gcp's server url
       final headers = {"Content-type": "multipart/form-data"};
 
       request.files.add(http.MultipartFile('image', //in flask app is: imagefile = request.files['image']
