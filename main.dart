@@ -1,12 +1,11 @@
 import 'dart:convert'; //for jsondecode
 import 'dart:io';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart' as http; //to connect to the gcp
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 import 'package:flutter/services.dart';
-
 
 void main() {
   runApp(const MyApp());
